@@ -152,6 +152,7 @@ import { IonIcon } from '@ionic/vue'
     width: 100%;
     height: 5%;
     align-content: center;
+    text-align: center;
     color: black;
     font-family:Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
