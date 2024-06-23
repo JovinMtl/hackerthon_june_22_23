@@ -60,9 +60,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    margin-top: -60px;
     background-color: rgb(255, 248, 248);
-    overflow: hidden;
 }
 .titl{
     display: flex;
