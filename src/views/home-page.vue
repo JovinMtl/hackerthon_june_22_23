@@ -86,8 +86,16 @@ import { IonIcon } from '@ionic/vue'
     color: red;
     justify-content: center;
     align-items: center;
-
-
+}
+.addMach:active{
+    display: flex;
+    width: 5vw;
+    height: 100%;
+    font-size: 40px;
+    color: red;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 41, 41);
 }
 .cateOne{
     display: flex;

@@ -70,7 +70,8 @@ const connect = async ()=>{
         display: flex;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 255, 0, 0.692);
+        // background-color: rgba(0, 255, 0, 0.692);
+        background-color: rgba(47, 128, 153, 0.897);
         // background-color: rgba(128, 128, 128, 0.397);
         position: relative;
         justify-content: center;
