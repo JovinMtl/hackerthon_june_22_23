@@ -1,7 +1,13 @@
 <template>
     <div class="homeContainer">
         <div class="titl">
-            <div class="addMach">+</div>
+            <!-- <div class="addMach">+</div> -->
+            <div class="addMach">
+                <!-- <img src="/power-outline.svg" alt=""
+                style="position: relative;height: 45px; width: 45px;
+                top: 8px;left: 15px;"> -->
+                <ion-icon :src="powerOutline"></ion-icon>
+            </div>
             <div class="cateOne">
                 <h2 style="font-family: Ubuntu;">Data Center: INGANZAMARUMPU</h2> 
             </div>
@@ -52,7 +58,11 @@
     </div>
 </template>
 
-<script >
+<script setup lang="ts">
+import { 
+    powerOutline
+} from 'ionicons/icons'
+import { IonIcon } from '@ionic/vue'
 </script>
 
 <style scoped>
@@ -66,20 +76,26 @@
     display: flex;
     width: 100%;
     height: 10%;
-    background-color: green;
+    /* background-color: green; */
 }
 .addMach{
+    display: flex;
     width: 5vw;
     height: 100%;
-    background-color: red;
-    align-content: center;
-    font-size: 50px;
+    font-size: 40px;
+    color: red;
+    justify-content: center;
+    align-items: center;
+
 
 }
 .cateOne{
+    display: flex;
     width: 75%;
     height: 100%;
     background-color: grey;
+    justify-content: center;
+    align-content: center;
 }
 .cateTwo{
     width: 20%;

@@ -29,8 +29,8 @@ const username = ref(null)
 const password = ref(null)
 
 const connect = async ()=>{
-    const base = '//127.0.0.1:8002'
-    const prefix = 'api/in/requested/'
+    const base = '//192.168.1.1:8000/api'
+    const prefix = 'login/'
     
     console.log("You sent username: ", username.value, 'and password: ', password.value)
 
