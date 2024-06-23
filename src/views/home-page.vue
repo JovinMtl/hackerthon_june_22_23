@@ -137,6 +137,7 @@ import { IonIcon } from '@ionic/vue'
     width: 30%;
     height: 100%;
     /* background-color: red; */
+    color: black;
     align-content: center;
     text-align: right;
 }
