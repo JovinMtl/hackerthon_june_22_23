@@ -16,17 +16,41 @@
             </div>
             <div class="confirmationContainer">
             </div>
-            <div @click="connect" class="enter">
+            <div @click="login" class="enter">
                 <div class="btn">se connecter</div>
             </div>
         </div>
     </div>
 </template>
 <script setup lang="ts">
-import {  ref } from 'vue'
+import { ref } from 'vue'
+import { useStore } from 'vuex'
+import {} from '../../store'
+import axios  from 'axios'
+
+const store = useStore()
 
 const username = ref(null)
 const password = ref(null)
+
+
+let logs = ''
+
+const login = async () =>{
+    const base = '//192.168.1.1:8000/api'
+    const prefix = 'login/'
+
+    axios.post(`${base}/${prefix}`,{"username": username.value,
+       "password":password.value}
+      ).then((response) => {
+        store.state.user = response.data
+        console.log("the data: ", response.data)
+      }).catch((error) => {
+        logs = error.response.data
+      })
+    
+    
+}
 
 const connect = async ()=>{
     const base = '//192.168.1.1:8000/api'
